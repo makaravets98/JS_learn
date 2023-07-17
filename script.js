@@ -29,3 +29,13 @@ const personalMovieDB = {
     genres: [],
     private: false
 };
+
+const question_1 = prompt('Один из последних просмотренных фильмов?', '');
+const question_2 = +prompt('На сколько оцените его?', '');
+const question_3 = prompt('Один из последних просмотренных фильмов?', '');
+const question_4 = +prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[question_1] = question_2;
+personalMovieDB.movies[question_3] = question_4;
+
+console.log(personalMovieDB);
